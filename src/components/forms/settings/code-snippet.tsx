@@ -18,15 +18,15 @@ const CodeSnippet = ({ id }: Props) => {
     style.textContent = styleString;
     document.head.append(style);
     }
-    
-    iframeStyles('
+
+    iframeStyles(`
         .chat-frame {
             position: fixed;
             bottom: 50px;
             right: 50px;
             border: none;
         }
-    ')
+    `)
     
     iframe.src = "https://corinna-ai-saas.vercel.app/chatbot"
     iframe.classList.add('chat-frame')
