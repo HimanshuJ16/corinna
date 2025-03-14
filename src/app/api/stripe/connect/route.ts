@@ -110,8 +110,8 @@ export async function GET() {
 
     const accountLink = await stripe.accountLinks.create({
       account: account.id,
-      refresh_url: 'http://localhost:3000/callback/stripe/refresh',
-      return_url: 'http://localhost:3000/callback/stripe/success',
+      refresh_url: 'https://corinna-ai-saas.vercel.app/callback/stripe/refresh',
+      return_url: 'https://corinna-ai-saas.vercel.app/callback/stripe/success',
       type: 'account_onboarding',
       collect: 'eventually_due',
     })
