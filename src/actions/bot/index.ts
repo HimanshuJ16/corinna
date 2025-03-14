@@ -1,4 +1,4 @@
-'use server'
+"use server"
 
 import { client } from '@/lib/prisma'
 import { extractEmailsFromString, extractURLfromString } from '@/lib/utils'
@@ -202,6 +202,8 @@ export const onAiChatBotAssistant = async (
           message,
           author
         )
+
+        console.log('Fetched Customer ID:', checkCustomer?.customer[0].id);
 
         const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' })
         const prompt = `
