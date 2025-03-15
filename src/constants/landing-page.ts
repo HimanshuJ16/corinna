@@ -5,7 +5,7 @@ export const pricingCards = [
     price: '$0',
     duration: '',
     highlight: 'Key features',
-    features: [' 1 domain ', '10 contacts', '10 Emails per month'],
+    features: [' Unlimited domain ', '500 Contacts', '500 Emails'],
     priceId: '',
   },
   {

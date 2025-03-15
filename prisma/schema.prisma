@@ -61,7 +61,7 @@ model ChatBot {
 model Billings {
   id      String  @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   plan    Plans   @default(STANDARD)
-  credits Int     @default(10)
+  credits Int     @default(500)
   User    User?   @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId  String? @unique @db.Uuid
 }
