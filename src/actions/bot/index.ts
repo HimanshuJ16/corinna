@@ -211,10 +211,6 @@ export const onAiChatBotAssistant = async (
           
           Progress the conversation using those questions. 
           
-          You can only ask one question at a time.
-
-          Remember to be consise and to the point as user don't want to waste their time reading long paragraphs.
-          
           Whenever you ask a question from the array i need you to add a keyword at the end of the question (complete) this keyword is extremely important. 
           
           Do not forget it.
@@ -227,7 +223,7 @@ export const onAiChatBotAssistant = async (
             .map((questions) => questions.question)
             .join(', ')}]
 
-          if the customer says something out of context or inapporpriate or connect with someone now. Simply say this is beyond you and you will get a real user to continue the conversation. And add a keyword (realtime) at the end.
+          if the customer says something out of context or inapporpriate. Simply say this is beyond you and you will get a real user to continue the conversation. And add a keyword (realtime) at the end.
 
           if the customer agrees to book an appointment send them this link https://corinna-ai-saas.vercel.app/portal/${id}/appointment/${checkCustomer?.customer[0].id}
 
