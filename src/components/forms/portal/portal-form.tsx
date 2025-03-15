@@ -64,7 +64,7 @@ const PortalForm = ({
 
   return (
     <form
-      className="h-full flex flex-col gap-10 justify-center"
+      className="h-full flex flex-col gap-10 mb-16"
       onSubmit={onBookAppointment}
     >
       <PortalSteps

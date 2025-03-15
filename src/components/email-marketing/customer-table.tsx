@@ -60,7 +60,9 @@ export const CustomerTable = ({
                   </Card>
                 }
               >
-                <Answers id={id} />
+                <div className="max-h-[80vh] overflow-y-auto">
+                  <Answers id={id} />
+                </div>
               </SideSheet>
             </TableCell>
             <TableCell className="text-right">{c.Domain?.name}</TableCell>
