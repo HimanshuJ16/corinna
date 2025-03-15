@@ -14,11 +14,11 @@ To get started with corinna-ai, follow these steps:
 ## Clone the Repository
 
 ```bash
-git@github.com:Maheshwarreddy970/corinna-ai.git
+git@github.com:HimanshuJ16/corinna.git
 ```
 
 ```bash
-cd corinna-ai
+cd corinna
 ```
 
 ## Environment Variables
@@ -45,8 +45,8 @@ NEXT_PUBLIC_PUSHER_APP_SECRET=your_app_secret
 NEXT_PUBLIC_PUSHER_APP_KEY=your_app_key
 NEXT_PUBLIC_PUSHER_APP_ID=your_app_id
 
-# OpenAI Configuration
-OPEN_AI_KEY=your_openai_key
+# Gemini Configuration
+GEMINI_API_KEY=your_gemini_api_key
 
 # UploadCare Configuration
 NEXT_PUBLIC_UPLOAD_CARE_PUBLIC_KEY=your_uploadcare_public_key
