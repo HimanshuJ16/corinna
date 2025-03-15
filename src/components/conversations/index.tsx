@@ -32,7 +32,7 @@ const ConversationMenu = ({ domains }: Props) => {
             domains={domains}
             register={register}
           />
-          <div className="flex flex-col">
+          <div className="flex flex-col overflow-y-auto">
             <Loader loading={loading}>
               {chatRooms.length ? (
                 chatRooms.map((room) => (
